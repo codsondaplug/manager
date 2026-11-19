@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Вход</title>
+</head>
+<body>
+<h1>Task Manager</h1>
+<h2>Вход</h2>
+<p th:if="${param.error}">Неверный email или пароль</p>
+<p th:if="${param.logout}">Вы вышли из системы</p>
+<form method="post" th:action="@{/login}">
+    <p><label>Email: <input type="text" name="username" required></label></p>
+    <p><label>Пароль: <input type="password" name="password" required></label></p>
+    <button type="submit">Войти</button>
+</form>
+<p>Для регистрации используйте POST /api/auth/register в Swagger.</p>
+</body>
+</html>
