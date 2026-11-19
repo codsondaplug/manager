@@ -137,15 +137,3 @@ src/main/resources/
   templates/    — две Thymeleaf-страницы
 ```
 
-## Публикация на GitHub
-
-Создайте пустой репозиторий на GitHub, затем выполните в папке проекта:
-
-```powershell
-git init
-git add .
-git commit -m "Initial minimal Task Manager"
-git branch -M main
-git remote add origin https://github.com/ВАШ_АККАУНТ/ИМЯ_РЕПОЗИТОРИЯ.git
-git push -u origin main
-```
